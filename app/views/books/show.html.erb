@@ -1,0 +1,15 @@
+<div>
+  <%= flash[:notice] %><%= flash[:update] %>
+</div>
+
+<div class="show-text">
+<p class="text">Title:<%= @book.title %></p>
+
+<p class="text">Body:<%= @book.body %></p>
+</div>
+
+<ul class="sample">
+  <li><%= link_to "Edit", edit_book_path(@book.id), class:"link-to" %></li>
+  <li><%= link_to "Back", books_path, class:"link-to" %></li>
+</ul>
+
